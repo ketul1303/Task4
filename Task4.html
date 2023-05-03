@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="1" type="number">
+    <input id="2" type="number">
+
+    <button id="btn" onclick="handleClick()">Sum</button>
+
+    <div id="answer"></div>
+    
+    <script>
+        
+        function handleClick(){
+            var value1 = document.getElementById("1").value;
+            var value2 = document.getElementById("2").value;
+            var result = parseInt(value1) + parseInt(value2);
+            
+            document.getElementById("answer").innerHTML = result;
+ 
+        }
+        
+    </script>
+</body>
+</html>
